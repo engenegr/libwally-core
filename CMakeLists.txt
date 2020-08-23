@@ -60,8 +60,8 @@ target_link_libraries(wallycore secp256k1 android ${log-lib})
 add_library(secp256k1 SHARED
 
         src/secp256k1/src/secp256k1.c
-        src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-        src/secp256k1/src/java/org_bitcoin_Secp256k1Context.c
+        src/secp256k1/src/org_bitcoin_NativeSecp256k1.c
+        src/secp256k1/src/org_bitcoin_Secp256k1Context.c
         )
 
 target_include_directories(secp256k1
