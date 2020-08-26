@@ -1,6 +1,7 @@
 cmake_minimum_required (VERSION 3.4.1)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -w -fPIC")
+set(CMAKE_BUILD_TYPE 'Release')
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -w -fPIC -Os")
 
 if(ANDROID_ABI STREQUAL "armeabi-v7a")
     set(CMAKE_C_FLAGS "${ANDROID_CXX_FLAGS} ${CMAKE_C_FLAGS} -mfloat-abi=softfp -mfpu=neon -mthumb")
